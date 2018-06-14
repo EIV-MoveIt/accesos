@@ -1,4 +1,4 @@
-package com.santander.crm.sinergia.config;
+package com.emdl.moveit.config;
 
 import java.sql.SQLException;
 
@@ -6,23 +6,22 @@ import javax.sql.DataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
 import oracle.jdbc.pool.OracleDataSource;
 
-@Configuration
+//@Configuration
 public class OracleConfig {
 	
-	@Value("${url.oracle}")
-	private String urlOracle = "jdbc:oracle:thin:@180.181.159.40:1521:sinbande";     
+//	@Value("${url.oracle}")
+	private String urlOracle = "jdbc:oracle:thin:@localhost:1521:xe";     
 
-	@Value("${user.oracle}")
-	private String userOracle = "sin";
+//	@Value("${user.oracle}")
+	private String userOracle = "deifsine";
 
-	@Value("${pass.oracle}")
+//	@Value("${pass.oracle}")
 	private String passOracle = "sinergia";
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(OracleConfig.class);

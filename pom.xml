@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.santander.crm.sinergia</groupId>
-	<artifactId>prospectos</artifactId>
+	<groupId>com.emdl.moveit</groupId>
+	<artifactId>accesos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>prospectos</name>
-	<description>Proyecto Sinergia referidos</description>
+	<name>accesos</name>
+	<description>Proyecto Move IT Accesos</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -65,6 +66,24 @@
 			<artifactId>ojdbc7</artifactId>
 			<version>12.1.0.2.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.6.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

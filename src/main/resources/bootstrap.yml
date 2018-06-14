@@ -1,14 +1,16 @@
+server:
+  port: 8282
 spring:
   profiles:
     active: ${environment:default}
   application:
-    name: sinergia
+    name: moveit
   cloud:
     config:
       enable: true
-      uri: http://config-service-sinergias:8080
+      uri: http://config-service-moveit:8080
       name: ${spring.application.name}
       label: master
       profile: ${spring.profiles.active}
   datasource:
-    driver-class-name: oracle.jdbc.driver.OracleDriver 
+    driver-class-name: com.microsoft.jdbc.sqlserver.SQLServerDriver 
