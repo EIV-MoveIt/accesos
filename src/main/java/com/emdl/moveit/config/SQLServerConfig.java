@@ -15,15 +15,18 @@ import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 public class SQLServerConfig {
 
 	// @Value("${url.oracle}")
-	private String urlSqlServer = "jdbc:sqlserver://localhost:1433;databaseName=moveit";
+//	private String urlSqlServer = "jdbc:sqlserver://localhost:1433;databaseName=moveit";
+	private String urlSqlServer = "jdbc:sqlserver://173.212.213.18:1433;databaseName=siepfdb";
 
 	// @Value("${user.oracle}")
-	private String userSqlServer = "moveit";
+//	private String userSqlServer = "moveit";
+	private String userSqlServer = "S1epf";
 
 	// @Value("${pass.oracle}")
-	private String passSqlServer = "abc123";
+//	private String passSqlServer = "abc123";
+	private String passSqlServer = "S1epf";
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(OracleConfig.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(SQLServerConfig.class);
 
 	@Bean
 	DataSource dataSource() throws SQLException {

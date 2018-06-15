@@ -24,10 +24,10 @@ public class Usuario {
     @Column(name = "id_usuario", columnDefinition = "uniqueidentifier")
     private String idUsuario;
 	
-	@Column(name = "username")
+	@Column(name = "usuario")
 	private String username;
 	
-	@Column(name = "password")
+	@Column(name = "contrasenia")
 	private String password;
 
 	public String getIdUsuario() {
