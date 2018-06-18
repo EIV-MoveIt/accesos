@@ -1,16 +1,7 @@
-server:
-  port: 8282
 spring:
   profiles:
     active: ${environment:default}
   application:
     name: moveit
-  cloud:
-    config:
-      enable: true
-      uri: http://config-service-moveit:8080
-      name: ${spring.application.name}
-      label: master
-      profile: ${spring.profiles.active}
   datasource:
     driver-class-name: com.microsoft.jdbc.sqlserver.SQLServerDriver 
